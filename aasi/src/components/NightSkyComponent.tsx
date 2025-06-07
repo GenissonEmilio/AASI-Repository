@@ -21,7 +21,7 @@ const NightSkyComponent = () => {
     <div style={{ width: "100%", height: "100vh" }}>
       {React.createElement('night-sky', {
         id: 'nightSky',
-        layers: 1,
+        layers: 4,
         density: 30,
         'velocity-x': 60,
         'velocity-y': 60,
