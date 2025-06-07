@@ -48,14 +48,12 @@ const GlitchImage: React.FC<GlitchImageProps> = ({
   }, [src]);
 
   return (
-    <div>
-      <img
-        ref={imgRef}
-        src={src}
-        alt={alt}
-        className={`${className} glitch-intense`}
-      />
-    </div>
+    <img
+      ref={imgRef}
+      src={src}
+      alt={alt}
+      className={`${className} glitch-intense`}
+    />
   );
 };
 
