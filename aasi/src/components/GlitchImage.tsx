@@ -23,12 +23,12 @@ const GlitchImage: React.FC<GlitchImageProps> = ({
         createContainers: true,
         hideOverflow: true,
         timing: {
-          duration: 2000,
+          duration: 1000,
           iterations: Infinity,
         },
         glitchTimeSpan: {
           start: 0.5,
-          end: 0.7,
+          end: 0.9,
         },
         shake: {
           velocity: 15,
@@ -36,7 +36,7 @@ const GlitchImage: React.FC<GlitchImageProps> = ({
           amplitudeY: 0.2,
         },
         slice: {
-          count: 6,
+          count: 20,
           velocity: 15,
           minHeight: 0.02,
           maxHeight: 0.15,

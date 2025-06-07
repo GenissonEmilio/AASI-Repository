@@ -17,7 +17,7 @@ export default function Home() {
       <GlitchImage 
         src="/images/samurai.png" 
         alt="Descrição da imagem"
-        className="w-[150px] h-[250px] absolute inset-y-130 bottom-0 right-0 object-cover"
+        className="w-[150px] h-[250px] absolute inset-y-130 bottom-0 right-0 object-cover opacity-30"
       />
       
     </div>
