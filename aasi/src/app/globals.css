@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'fonte';
-  src: url('/fonts/fonte.ttf') format('truetype');
+  src: url('/fonts/fonte.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
