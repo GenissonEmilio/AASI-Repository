@@ -18,31 +18,33 @@ const GlitchImage: React.FC<GlitchImageProps> = ({
   useEffect(() => {
     if (imgRef.current) {
       PowerGlitch.glitch(imgRef.current, {
+        // Configurações padrão do glitch
         playMode: 'always',
         createContainers: true,
         hideOverflow: true,
         timing: {
-          duration: 50, // mais curto = efeito mais frequente
+          duration: 2000,
           iterations: Infinity,
-          easing: 'ease-in-out',
         },
         glitchTimeSpan: {
-          start: 0.1,
-          end: 1, // glitch ativo por quase todo o ciclo
+          start: 0.5,
+          end: 0.7,
         },
         shake: {
-          velocity: 30,
-          amplitudeX: 1.0,  // deslocamento horizontal forte
-          amplitudeY: 0,  // deslocamento vertical forte
+          velocity: 15,
+          amplitudeX: 0.2,
+          amplitudeY: 0.2,
         },
         slice: {
-          count: 150, // mais cortes
-          velocity: 25,
+          count: 6,
+          velocity: 15,
           minHeight: 0.02,
-          maxHeight: 1.0, // cortes mais altos
+          maxHeight: 0.15,
           hueRotate: true,
         },
         pulse: false,
+        // Sobrescreve com opções personalizadas se fornecidas
+        
       });
     }
   }, [src]);
@@ -52,7 +54,7 @@ const GlitchImage: React.FC<GlitchImageProps> = ({
       ref={imgRef}
       src={src}
       alt={alt}
-      className={`${className} glitch-intense`}
+      className={className}
     />
   );
 };
