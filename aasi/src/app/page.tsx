@@ -1,7 +1,6 @@
 import NightSkyComponent from "@/components/NightSkyComponent";
-import Image from "next/image";
-import { PowerGlitch } from "powerglitch";
-//import Script from "next/script";
+// import Image from "next/image";
+import GlitchImage from "@/components/GlitchImage";
 
 export default function Home() {
   return (
@@ -14,7 +13,13 @@ export default function Home() {
         </div>
       </div>
 
-      <Image src={'/images/samurai.png'} alt="samurai" width={150} height={250} className="absolute inset-y-130 bottom-0 right-0"/>
+      {/* <Image src={'/images/samurai.png'} alt="samurai" width={150} height={250} className="absolute inset-y-130 bottom-0 right-0" /> */}
+      <GlitchImage 
+        src="/images/samurai.png" 
+        alt="Descrição da imagem"
+        className="w-[150px] h-[250px] absolute inset-y-130 bottom-0 right-0 object-cover"
+      />
+      
     </div>
   );
 }
