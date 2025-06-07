@@ -31,9 +31,9 @@ const GlitchImage: React.FC<GlitchImageProps> = ({
           end: 0.9,
         },
         shake: {
-          velocity: 15,
-          amplitudeX: 0.2,
-          amplitudeY: 0.2,
+          velocity: 30,
+          amplitudeX: 1.0,
+          amplitudeY: 0,
         },
         slice: {
           count: 20,
