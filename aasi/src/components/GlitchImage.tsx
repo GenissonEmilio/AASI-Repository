@@ -41,7 +41,6 @@ const GlitchImage: React.FC<GlitchImageProps> = ({
           minHeight: 0.02,
           maxHeight: 1.0, // cortes mais altos
           hueRotate: true,
-          offset: 100, // deslocamento forte
         },
         pulse: false,
       });

@@ -4,7 +4,7 @@ import GlitchImage from "@/components/GlitchImage";
 
 export default function Home() {
   return (
-    <div className="w-full flex items-center justify-center">
+    <div className="w-full flex items-center justify-center overflow-hidden">
        <NightSkyComponent />
       <div className="absolute text-3xl text-[#6B2BDA] text-center">
         <h1 style={{ fontFamily: 'fonte' }} className="bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text">Em breve</h1>
