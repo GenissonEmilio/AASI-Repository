@@ -5,6 +5,44 @@
   --foreground: #171717;
 }
 
+/* globals.css */
+
+.glitch-intense {
+  filter: blur(1.5px) brightness(200%) contrast(500%) hue-rotate(180deg) saturate(800%);
+  transform: scale(1.05) rotate(1deg);
+  mix-blend-mode: difference;
+  animation: flicker 0.1s infinite alternate;
+}
+
+.glitch-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.glitch-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/noise.gif'); /* ⚠️ adicione esse GIF */
+  opacity: 0.2;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+@keyframes flicker {
+  from {
+    opacity: 0.85;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 @font-face {
   font-family: 'fonte';
   src: url('/fonts/fonte.TTF') format('truetype');
