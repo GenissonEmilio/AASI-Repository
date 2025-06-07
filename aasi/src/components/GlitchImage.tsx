@@ -23,7 +23,7 @@ const GlitchImage: React.FC<GlitchImageProps> = ({
         createContainers: true,
         hideOverflow: true,
         timing: {
-          duration: 500,
+          duration: 1000,
           iterations: Infinity,
         },
         glitchTimeSpan: {
