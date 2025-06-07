@@ -36,7 +36,7 @@ const GlitchImage: React.FC<GlitchImageProps> = ({
           amplitudeY: 0,
         },
         slice: {
-          count: 30,
+          count: 5,
           velocity: 15,
           minHeight: 0.02,
           maxHeight: 0.15,
