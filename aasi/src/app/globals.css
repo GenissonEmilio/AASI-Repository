@@ -5,6 +5,34 @@
   --foreground: #171717;
 }
 
+.neon {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #6B2BDA, #A63BEB, #E414FE, transparent);
+  box-shadow:
+    0 0 15px #6B2BDA,
+    0 0 30px #A63BEB,
+    0 0 50px #E414FE;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 1s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2) translate(-50%, -50%);
+  }
+}
+
+
 @font-face {
   font-family: 'fonte';
   src: url('/fonts/fonte.TTF') format('truetype');

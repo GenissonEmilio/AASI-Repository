@@ -19,7 +19,7 @@ export default function CardInfo() {
       bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 p-2 shadow-lg/40 rounded"
       >
         <GlitchImage
-          src="/images/samurai.png"
+          src="/images/mascote-sombra.png"
           alt="Descrição da imagem"
           className="w-[120px] h-[180px] object-cover opacity-0 blur-xl"
         />

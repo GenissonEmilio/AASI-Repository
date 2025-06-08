@@ -1,10 +1,12 @@
 import NightSkyComponent from "@/components/NightSkyComponent";
 import CardInfo from "@/components/CardInfo";
+import NeonEffect from "@/components/NeonEffect";
 
 export default function Home() {
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       <div className="relative flex items-center justify-center w-full h-full min-h-screen overflow-hidden">
+        <NeonEffect />
         <div className="absolute inset-0 -z-10">
           <NightSkyComponent />
         </div>
