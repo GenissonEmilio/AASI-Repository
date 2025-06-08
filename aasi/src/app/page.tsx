@@ -1,6 +1,7 @@
 import NightSkyComponent from "@/components/NightSkyComponent";
 // import Image from "next/image";
 import GlitchImage from "@/components/GlitchImage";
+import CardInfo from "@/components/CardInfo";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         className="w-[150px] h-[250px] absolute inset-y-130 bottom-0 right-0 object-cover opacity-30 blur-xl"
       />
       
+      <CardInfo />
     </div>
   );
 }
