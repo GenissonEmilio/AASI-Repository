@@ -1,5 +1,6 @@
 import NightSkyComponent from "@/components/NightSkyComponent";
-import CardInfo from "@/components/CardInfo";
+// import CardInfo from "@/components/CardInfo";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,12 +20,25 @@ export default function Home() {
           </h1>
           <p
             style={{ fontFamily: "Nasalization" }}
-            className="text-sm text-center mb-8"
+            className="text-sm text-center mb-2"
           >
             O primeiro card está na embalagem. <br /> O destino começa aqui...
           </p>
-          <CardInfo />
-          <div className="mt-4">
+          {/* <CardInfo /> */}
+          <Image
+            src="/images/card.png"
+            alt="Mascote do jogo"
+            width={300}
+            height={450}
+            className="object-cover"
+          />
+          <div
+            className="absolute bottom-[57px] text-sm mt-2 text-center font-bold tracking-wide"
+            style={{ fontFamily: "Nasalization" }}
+          >
+            Guerreiro do Futuro
+          </div>
+          <div className="mt-2">
             <p className="text-md bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center">
               Colecione. Descubra. Conquiste.
             </p>
