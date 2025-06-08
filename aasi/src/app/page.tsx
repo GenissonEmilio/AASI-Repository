@@ -12,10 +12,7 @@ export default function Home() {
 
         {/* Conteúdo centralizado */}
         <div className="relative bottom-10 flex flex-col items-center justify-center px-4">
-          <h1
-            style={{ fontFamily: "fonte" }}
-            className="text-3xl bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center"
-          >
+          <h1 className="text-3xl bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center">
             Aguarde...
           </h1>
           <p
@@ -32,10 +29,7 @@ export default function Home() {
             height={450}
             className="object-cover"
           />
-          <div
-            className="absolute bottom-[57px] text-sm mt-2 text-center font-bold tracking-wide"
-            style={{ fontFamily: "Nasalization" }}
-          >
+          <div className="absolute bottom-[57px] text-sm mt-2 text-center tracking-wide">
             Guerreiro do Futuro
           </div>
           <div className="mt-2">
