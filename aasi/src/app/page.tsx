@@ -1,10 +1,13 @@
 import NightSkyComponent from "@/components/NightSkyComponent";
-// import CardInfo from "@/components/CardInfo";
+import Trail from "@/components/Trail";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+      <Trail />
+
+      {/* Componente do céu noturno */}
       <div className="relative flex items-center justify-center w-full h-full min-h-screen overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <NightSkyComponent />
