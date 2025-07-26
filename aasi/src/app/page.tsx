@@ -14,21 +14,21 @@ export default function Home() {
         {/* Conteúdo centralizado */}
         <div className="relative bottom-10 flex flex-col items-center justify-center px-4">
           <h1
-            style={{ fontFamily: "fonte" }}
-            className="text-3xl bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center"
+            style={{ fontFamily: "Nasalization" }}
+            className="text-4xl bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center font-bold"
           >
-            Aguarde...
+            Atletica Hashiras
           </h1>
           <p
             style={{ fontFamily: "Nasalization" }}
             className="text-sm text-center mb-8"
           >
-            O primeiro card está na embalagem. <br /> O destino começa aqui...
+            A Atlética Hashiras nasceu da vontade de tornar <br /> o curso de BSI mais unido, mais visível e mais engajado.
           </p>
           <CardInfo />
           <div className="mt-4">
-            <p className="text-md bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center">
-              Colecione. Descubra. Conquiste.
+            <p className="text-3xl bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center font-bold" style={{ fontFamily: "Nasalization" }}>
+              Vem ser Hashiras!
             </p>
           </div>
         </div>

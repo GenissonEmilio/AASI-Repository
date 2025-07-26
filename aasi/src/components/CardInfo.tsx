@@ -8,30 +8,32 @@ export default function CardInfo() {
       bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 rounded border-6 border-fuchsia-200"
     >
       <div
-        className="w-full
-      bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 p-2 shadow-lg/40 rounded"
+        className="max-w-max bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 p-2 shadow-lg/40 rounded"
       >
-        <p>Guerreiro do Futuro</p>
+        <p className="whitespace-nowrap">A nossa história começa aqui!</p>
       </div>
 
       <div
-        className="flex items-center justify-center w-[90%] 
-      bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 p-2 shadow-lg/40 rounded"
+        className="flex items-center justify-center 
+                  w-[200px] h-[300px] 
+                  bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 
+                  rounded-full border-4 border-fuchsia-200 overflow-hidden"
       >
         <GlitchImage
-          src="/images/mascote-sombra.png"
-          alt="Descrição da imagem"
-          className="w-[120px] h-[180px] object-cover opacity-0 blur-xl"
+          src="/images/test2.png"
+          alt="Logo Hashiras"
+          className="w-full h-full object-cover object-center rounded-full"
         />
       </div>
+
 
       <div
         className="w-full
       bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 p-2 shadow-lg/40 rounded"
       >
         <p className="text-sm">
-          Este guerreiro surgiu da sombra de um futuro distante, onde a
-          tecnologia e a tradição se entrelaçam.
+          Um espaço pra todo mundo se conectar, competir, se divertir e crescer junto.
+          Vamos promover esporte, cultura e interação.
         </p>
       </div>
     </div>

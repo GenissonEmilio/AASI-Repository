@@ -5,6 +5,14 @@
   --foreground: #171717;
 }
 
+.stroke {
+  /* Já estilado inline no JS, mas pode ajustar aqui se quiser */
+  /* Exemplo: */
+  background: linear-gradient(90deg, cyan, #00ffff);
+  box-shadow: 0 0 8px cyan;
+  border-radius: 1px;
+}
+
 .neon {
   position: fixed;
   width: 20px;
