@@ -1,40 +1,53 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import NightSkyComponent from "@/components/NightSkyComponent";
 import CardInfo from "@/components/CardInfo";
 import NeonEffect from "@/components/NeonEffect";
 
 export default function Home() {
+  const [showAlert, setShowAlert] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowAlert(false), 5000); // 5 segundos
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+      {/* ALERTA FIXO NO TOPO */}
+      {showAlert && (
+        <div className="fixed top-10 md:top-4 left-1/2 transform -translate-x-1/2 z-50 w-auto px-4 py-2 bg-gradient-to-r from-purple-700 to-fuchsia-400 text-white font-semibold rounded-md shadow-lg animate-fade-in-out transition-all duration-300 whitespace-nowrap">
+          Deslize o dedo na tela para ver o efeito!
+        </div>
+      )}
+
       <div className="relative flex items-center justify-center w-full h-full min-h-screen overflow-hidden">
         <NeonEffect />
         <div className="absolute inset-0 -z-10">
           <NightSkyComponent />
         </div>
 
-        {/* Conteúdo centralizado */}
         <div className="relative bottom-10 flex flex-col items-center justify-center px-4">
           <h1
-            style={{ fontFamily: "Nasalization" }}
+            style={{ fontFamily: "gang" }}
             className="text-4xl bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center font-bold"
           >
             Atletica Hashiras
           </h1>
-          <p
-            style={{ fontFamily: "Nasalization" }}
-            className="text-sm text-center mb-8"
-          >
-            A Atlética Hashiras nasceu da vontade de tornar <br /> o curso de BSI mais unido, mais visível e mais engajado.
+          <p className="text-sm text-center mb-8 font-bold">
+            A Atlética Hashiras nasceu da vontade de tornar <br /> o curso de
+            BSI mais unido, mais visível e mais engajado.
           </p>
           <CardInfo />
           <div className="mt-4">
-            <p className="text-3xl bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center font-bold" style={{ fontFamily: "Nasalization" }}>
+            <p
+              className="text-3xl bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 text-transparent bg-clip-text text-center font-bold"
+              style={{ fontFamily: "gang" }}
+            >
               Vem ser Hashiras!
             </p>
           </div>
-          <div className="flex items-center gap-2 text-sm text-white opacity-80 animate-pulse mt-2">
-            <span>Deslize o dedo para ver o efeito!</span>
-          </div>
-
         </div>
       </div>
     </div>

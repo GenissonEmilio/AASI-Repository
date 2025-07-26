@@ -3,13 +3,10 @@ import GlitchImage from "@/components/GlitchImage";
 export default function CardInfo() {
   return (
     <div
-      style={{ fontFamily: "Nasalization" }}
-      className="text-start flex items-center justify-center flex-col gap-4 p-4 w-[300px] h-[410px]
+      className="font-bold text-start flex items-center justify-center flex-col gap-4 p-4 w-[300px] h-[410px]
       bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 rounded border-6 border-fuchsia-200"
     >
-      <div
-        className="max-w-max bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 p-2 shadow-lg/40 rounded"
-      >
+      <div className="max-w-max bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 p-2 shadow-lg/40 rounded">
         <p className="whitespace-nowrap">A nossa história começa aqui!</p>
       </div>
 
@@ -26,14 +23,13 @@ export default function CardInfo() {
         />
       </div>
 
-
       <div
         className="w-full
       bg-gradient-to-r from-[#6B2BDA] to-fuchsia-600 p-2 shadow-lg/40 rounded"
       >
         <p className="text-sm">
-          Um espaço pra todo mundo se conectar, competir, se divertir e crescer junto.
-          Vamos promover esporte, cultura e interação.
+          Um espaço pra todo mundo se conectar, competir, se divertir e crescer
+          junto. Vamos promover esporte, cultura e interação.
         </p>
       </div>
     </div>
