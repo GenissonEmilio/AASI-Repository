@@ -31,6 +31,10 @@ export default function Home() {
               Vem ser Hashiras!
             </p>
           </div>
+          <div className="flex items-center gap-2 text-sm text-white opacity-80 animate-pulse mt-2">
+            <span>Deslize o dedo para ver o efeito!</span>
+          </div>
+
         </div>
       </div>
     </div>
